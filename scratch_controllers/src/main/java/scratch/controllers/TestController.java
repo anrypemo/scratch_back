@@ -1,23 +1,16 @@
 package scratch.controllers;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 @RestController
 public class TestController {
 
-    @RequestMapping("/test")
-    public String test() {
-        return "{\"response\": \"Greetings!\"}";
-    }
 
-
-    @RequestMapping("/login")
-    public String login(DampModel dampModel) {
-        return "{\"response\": \"Login tested!\"}";
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @ResponseBody
+    public DampModel login(@RequestBody DampModel dampModel) {
+        return dampModel;
     }
 
 }
