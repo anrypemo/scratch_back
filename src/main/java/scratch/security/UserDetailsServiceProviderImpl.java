@@ -18,7 +18,7 @@ public class UserDetailsServiceProviderImpl implements UserDetailsServiceProvide
 // TODO: 3/21/2019 Replace temp block while ORM will be ready
             //temp block starts
             User user = null;
-                user = new User(username, "test123", AuthorityUtils.createAuthorityList(Authority.USER.getAuth()));
+                user = new User(username, "$2a$04$BhzlkwTeus2DYYJZuAwFlO1xe6FpGtgVpmSZOatAK/7hXgGtASeWy", AuthorityUtils.createAuthorityList(Authority.USER.getAuth()));
             //temp block ends
 
             return user;
