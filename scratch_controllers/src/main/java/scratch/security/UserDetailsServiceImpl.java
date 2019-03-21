@@ -1,4 +1,4 @@
-package scratch_ap.security;
+package scratch.security;
 
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
