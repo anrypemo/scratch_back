@@ -1,4 +1,4 @@
-package scratch_ap.models;
+package scratch.models;
 
 public class User {
     private String username;

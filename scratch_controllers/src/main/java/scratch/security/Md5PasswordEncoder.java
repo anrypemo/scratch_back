@@ -1,4 +1,4 @@
-package scratch_ap.security;
+package scratch.security;
 
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;

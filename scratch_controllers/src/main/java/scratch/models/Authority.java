@@ -1,4 +1,4 @@
-package scratch_ap.models;
+package scratch.models;
 
 public enum Authority {
     ADMIN("ADMIN"),
