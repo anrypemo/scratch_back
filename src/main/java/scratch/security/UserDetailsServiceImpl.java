@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-@Service(value = "userService")
+@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
     @Resource
     private UserDetailsServiceProvider userDetailsServiceProvider;
