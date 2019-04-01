@@ -10,7 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import scratch.security.Md5PasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.annotation.Resource;
 
@@ -47,9 +47,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().csrf().disable();
     }
 
+    // TODO: 01.04.2019 fix: Encoded password does not look like BCrypt
     @Bean
-    public Md5PasswordEncoder encoder() {
-        return new Md5PasswordEncoder();
+    public BCryptPasswordEncoder encoder() {
+        return new BCryptPasswordEncoder();
     }
-
 }
