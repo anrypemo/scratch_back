@@ -37,10 +37,10 @@ INSERT INTO public.roles VALUES (222, 'ADMIN');
 INSERT INTO public.roles VALUES (333, 'GUEST');
 
 -- USERS
-INSERT INTO users VALUES ('101','anry','$2a$04$BhzlkwTeus2DYYJZuAwFlO1xe6FpGtgVpmSZOatAK/7hXgGtASeWy','Anna','Rysakova','annrysakova@test.com');
-INSERT INTO users VALUES ('102','pemo','$2a$04$BhzlkwTeus2DYYJZuAwFlO1xe6FpGtgVpmSZOatAK/7hXgGtASeWy','Petro','Moiseienko','moiseienkopetro@test.com');
-INSERT INTO users VALUES ('103','user1','$2a$04$BhzlkwTeus2DYYJZuAwFlO1xe6FpGtgVpmSZOatAK/7hXgGtASeWy','UserOne','One','useone@test.com');
-INSERT INTO users VALUES ('104','guest1','$2a$04$kvbt44bSKTHtN1vo2HmiXuTDqV7nIjPxSJxNdQ73clYQgN0M0HEqW','Guest','One','guestone@test.com');
+INSERT INTO users VALUES ('101','anry','{brypt}$2a$04$BhzlkwTeus2DYYJZuAwFlO1xe6FpGtgVpmSZOatAK/7hXgGtASeWy','Anna','Rysakova','annrysakova@test.com');
+INSERT INTO users VALUES ('102','pemo','{brypt}$2a$04$BhzlkwTeus2DYYJZuAwFlO1xe6FpGtgVpmSZOatAK/7hXgGtASeWy','Petro','Moiseienko','moiseienkopetro@test.com');
+INSERT INTO users VALUES ('103','user1','{brypt}$2a$04$BhzlkwTeus2DYYJZuAwFlO1xe6FpGtgVpmSZOatAK/7hXgGtASeWy','UserOne','One','useone@test.com');
+INSERT INTO users VALUES ('104','guest1','{brypt}$2a$04$kvbt44bSKTHtN1vo2HmiXuTDqV7nIjPxSJxNdQ73clYQgN0M0HEqW','Guest','One','guestone@test.com');
 
 -- USER - ROLES
 INSERT INTO users_roles VALUES (111,103);
