@@ -1,4 +1,4 @@
-package scratch.models.user;
+package scratch.user;
 
 public enum RoleDto {
     ADMIN("ADMIN"),

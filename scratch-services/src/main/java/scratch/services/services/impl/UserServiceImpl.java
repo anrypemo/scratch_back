@@ -1,10 +1,10 @@
-package scratch.to_services_module.services.impl;
+package scratch.services.services.impl;
 
+import scratch.services.models.Users;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import scratch.to_services_module.models.Users;
-import scratch.to_services_module.repository.UserRepository;
-import scratch.to_services_module.services.UserService;
+import scratch.services.repository.UserRepository;
+import scratch.services.services.UserService;
 
 import javax.annotation.Resource;
 

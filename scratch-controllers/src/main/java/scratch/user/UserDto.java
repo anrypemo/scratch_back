@@ -1,4 +1,4 @@
-package scratch.models.user;
+package scratch.user;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;

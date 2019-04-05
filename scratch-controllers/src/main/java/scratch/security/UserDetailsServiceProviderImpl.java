@@ -8,8 +8,9 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import scratch.to_services_module.models.Roles;
-import scratch.to_services_module.services.UserService;
+import scratch.services.models.Roles;
+import scratch.services.models.Users;
+import scratch.services.services.UserService;
 
 import javax.annotation.Resource;
 import java.util.Collection;
@@ -28,8 +29,8 @@ public class UserDetailsServiceProviderImpl implements UserDetailsServiceProvide
     public UserDetails provide(String username) throws UsernameNotFoundException {
         if (Objects.nonNull(username)) {
 
-            logger.info("Providing user details for {}", username);
-            scratch.to_services_module.models.Users findUser = userService.findByUsername(username);
+            logger.info("Providing scratch.user details for {}", username);
+            Users findUser = userService.findByUsername(username);
 
             if (findUser == null) {
                 return null;

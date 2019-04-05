@@ -3,8 +3,8 @@ package scratch.controllers;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
-import scratch.models.user.UserDto;
 import scratch.testService.ImageTest;
+import scratch.user.UserDto;
 
 @CrossOrigin
 @RestController
@@ -17,11 +17,11 @@ public class TestController {
         return dampModel;
     }
 
-    @RequestMapping(value = "/user", method = RequestMethod.GET)
+    @RequestMapping(value = "/scratch/user", method = RequestMethod.GET)
     @ResponseBody
     public UserDto login() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        //just example of getting logged user's name
+        //just example of getting logged scratch.user's name
         UserDto user = new UserDto();
         user.setUsername(auth.getName());
         return user;

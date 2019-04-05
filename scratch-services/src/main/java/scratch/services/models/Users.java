@@ -1,4 +1,4 @@
-package scratch.to_services_module.models;
+package scratch.services.models;
 
 import javax.persistence.*;
 import java.util.Collection;
